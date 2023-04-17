@@ -6,22 +6,49 @@
         <meta name="author" content="Dima Tischenko">
         <title>My Portfolio</title>
         <link rel="stylesheet" href="./resources/CSS/styles.css">
-        <script defer src="./main.js"></script>
+        <script src="https://kit.fontawesome.com/95ab87f37c.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <nav>
-            <h3>Dima Tischenko</h3>
-            <ul>
-                <li>About</li>
-                <li>Projects</li>
-                <li>Skills</li>
-                <li>Contact me</li>
-            </ul>
+        <nav class="navbar">
+            <div class="max-width">
+                <div class="logo"><a href="#"><span>D</span>ima <span>T</span>ischenko</a></div>
+                <ul class="menu">
+                   <li class="header-nav-tab"><a href="#" id="li-about">About</a></li>
+                   <li class="header-nav-tab"><a href="#" id="li-projects">Projects</a></li>
+                   <li class="header-nav-tab"><a href="#" id="li-skills">Skills</a></li>
+                   <li class="header-nav-tab"><a href="#" id="li-contacts">Contact</a></li>
+                </ul>
+            </div>
         </nav>
-        <section id="aboutMe"></section>
-        <section id="projects"></section>
-        <section id="skills"></section>
+<!--About Me-->
+        <section class="aboutMe" id="aboutMe">
+            <div class="max-width">
+                <div class="aboutMe-content">
+                    <div class="text-1">Hi,</div>
+                    <div class="text-2">I'm <span>Dima</span></div>
+                    <div class="text-3">Sofware Developer</div>
+                </div>
+                <div class="icons">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-github"></i>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <div id="dino" class="projects"></div>
+            <div id="secondProject" class="projects"></div>
+            <div id="thirdProject" class="projects"></div>
+        </section>
+        <section id="skills">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-square-js"></i>
+            <i class="fa-brands fa-react"></i>
+            <i class="fa-brands fa-node"></i>
+            <i class="fa-brands fa-git"></i>
+        </section>
         <section id="contactMe"></section>
         <footer></footer>
+        <script src="./main.js"></script>
     </body>
 </html>

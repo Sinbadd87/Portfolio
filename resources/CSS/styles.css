@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+/*navbar*/
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 1.875rem 0;
+    /*background: #73EEDC;*/
+    font-family: 'Poppins', sans-serif;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: #2708A0;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.navbar .logo a span{
+    color: #4316F3;
+    font-size: 2.1rem;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    color: #2708A0;
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-left: 1.56rem;
+}
+.navbar .menu li a:hover{
+    color: #4316F3;
+}
+
+/*About Me section*/
+.aboutMe{
+    display: flex;
+    background: url("/Users/work/Portfolio/Portfolio/resources/Images/images/AboutMe.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: 300px;
+    height: 100vh;
+    color: #2708A0;
+    min-height: 500px;
+    font-family: 'Poppins', sans-serif;
+}
+.aboutMe .max-width{
+    margin: auto 0 auto 2.5rem;
+}
+.aboutMe .aboutMe-content .text-1{
+    font-size: 2.5rem;
+}
+.aboutMe .aboutMe-content .text-2{
+    font-size: 4.25rem;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.aboutMe .aboutMe-content .text-2 span{
+    color: #4316F3;
+}
+.aboutMe .aboutMe-content .text-3{
+    font-size: 2.5rem;
+    margin: 5px 0;
+    color: #2708A0;
+}
+.icons{
+    font-size: 2.5rem;
+}
