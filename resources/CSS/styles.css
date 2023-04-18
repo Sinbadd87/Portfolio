@@ -47,6 +47,17 @@
     color: #4316F3;
 }
 
+.navbar .menu #marker{
+    position: fixed;
+    left: 0;
+    height: 6px;
+    width: 0;
+    background: #4316F3;
+    transition: 0.5s;
+    border-radius: 4px;
+    top: 67px;
+}
+
 /*About Me section*/
 .aboutMe{
     display: flex;
