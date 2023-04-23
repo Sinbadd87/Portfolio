@@ -16,7 +16,6 @@
     position: fixed;
     width: 100%;
     padding-top: 1.875rem;
-    /*background: #73EEDC;*/
     font-family: 'Poppins', sans-serif;
 }
 .navbar .max-width{
@@ -47,8 +46,7 @@
 .navbar .menu li a:hover{
     color: #4316F3;
 }
-
-.navbar .max-width .menu li a::before{
+.navbar .menu li a::before{
     content: '';
     position: absolute;
     width: 100%;
@@ -60,26 +58,58 @@
     border-radius: 4px;
     transform: scale(0);
 }
-.navbar .max-width .menu li a:hover::before{
+.navbar .menu li a:hover::before{
     transform: scale(1);
 }
-.navbar .max-width .menu li a.active::before{
+.navbar .menu li a.active::before{
     transform: scale(1);
 }
-.navbar .max-width .menu li a.active{
+.navbar .menu li a.active{
     color: #4316F3;
 }
+.icon{
+    position: absolute;
+    right: 80px;
+    color: #2708A0;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
 
-/*.navbar .menu #marker{
-    position: fixed;
-    left: 0;
-    height: 6px;
-    width: 0;
-    background: #4316F3;
-    transition: 0.5s;
-    border-radius: 4px;
-    top: 67px;
-}*/
+/* Mobile width */
+@media screen and (max-width:800px) {
+    .icon{
+        display: block;
+    }
+    .icon.hide{
+        display: none;
+    }
+    .navbar .menu{
+        position: fixed;
+        width: 100%;
+        height: calc(100vh - 80px);
+        top: 80px;
+        left: -100%;
+        background-color: #2708A0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: left 0.4s cubic-bezier(1, 0.2, 0.2, 1);
+    }
+    .navbar .menu.active{
+        left: 0%;
+    }
+    .navbar .menu li{
+        padding: 20px;
+        letter-spacing: 2px;
+    }
+    .navbar .menu li a{
+        color: aliceblue;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+} 
 
 /*About Me section*/
 .aboutMe{
