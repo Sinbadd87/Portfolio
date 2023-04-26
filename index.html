@@ -13,10 +13,10 @@
             <div class="max-width">
                 <div class="logo"><a href="#"><span>D</span>ima <span>T</span>ischenko</a></div>
                 <ul class="menu">
-                   <li><a href="#" class="active items">About</a></li>
-                   <li><a href="#" class="items">Projects</a></li>
-                   <li><a href="#" class="items">Skills</a></li>
-                   <li><a href="#" class="items">Contact</a></li>
+                   <li><a href="#aboutMe" class="active items">About</a></li>
+                   <li><a href="#projects" class="items">Projects</a></li>
+                   <li><a href="#skills" class="items">Skills</a></li>
+                   <li><a href="#contactMe" class="items">Contact</a></li>
                 </ul>
                 <div class="icon menu-btn">
                     <i class="fa-solid fa-bars"></i>
@@ -35,26 +35,51 @@
                     <div class="text-3">Sofware Developer</div>
                 </div>
                 <div class="icons">
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-brands fa-github"></i>
+                    <a href="https://www.linkedin.com/in/dmitry-tischenko-29355134/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href='https://github.com/Sinbadd87'><i class="fa-brands fa-github"></i></a> 
                 </div>
             </div>
         </section>
-        <section id="projects">
-            <div id="dino" class="projects"></div>
-            <div id="secondProject" class="projects"></div>
-            <div id="thirdProject" class="projects"></div>
+        <section class="max-width projects" id="projects">
+            <h2>My projects</h2>
+            <div class="project--list">
+                <div id="dino" class="project--item">
+                    <img src="./resources/Images/images/dino.jpeg" alt="dino">
+                </div>
+                <div id="secondProject" class="project--item">
+                    <img src="./resources/Images/images/online-theatre.jpeg" alt="netflix">
+                </div>
+                <div id="thirdProject" class="project--item">
+                    <img src="./resources/Images/images/resume.jpeg" alt="resume">
+                </div>
+            </div>
         </section>
-        <section id="skills">
-            <i class="fa-brands fa-html5"></i>
-            <i class="fa-brands fa-css3-alt"></i>
-            <i class="fa-brands fa-square-js"></i>
-            <i class="fa-brands fa-react"></i>
-            <i class="fa-brands fa-node"></i>
-            <i class="fa-brands fa-git"></i>
+        <section class="max-width skills" id="skills">
+            <h2>My Skills</h2>
+            <div class="skills--list">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-square-js"></i>
+                <i class="fa-brands fa-react"></i>
+                <i class="fa-brands fa-node"></i>
+                <i class="fa-brands fa-git"></i>
+            </div>
         </section>
-        <section id="contactMe"></section>
-        <footer></footer>
+        <section class="max-width contacts" id="contactMe">
+            <h2>Contact</h2>
+            <div class="contact--menu">
+                <span>
+                    <i class="fas fa-at"></i>
+                </span>
+                <div class="contact--info">
+                    <h4>Mail:</h4>
+                    <a href="mailto:dtishen87@gmail.com">dtishen87@gmail.com</a>
+                </div>
+            </div>
+        </section>
+        <footer class="max-width">
+            <div class="copyright">Copyright © 2023. All rights are reserved</div>
+        </footer>
         <script src="./main.js"></script>
     </body>
 </html>

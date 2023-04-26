@@ -18,4 +18,4 @@ items.forEach(item => {
     menu.classList.remove('active');
     menuBtn.classList.remove('hide');
     cancelBtn.classList.add('hide');
-  })
+  });

@@ -11,12 +11,22 @@
     padding: 0 80px;
     margin: auto;
 }
+h2{
+    color: #2708A0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 2rem 0;
+}
 /*navbar*/
 .navbar{
     position: fixed;
     width: 100%;
     padding-top: 1.875rem;
     font-family: 'Poppins', sans-serif;
+    z-index: 99;
+    background-color: white;
 }
 .navbar .max-width{
     display: flex;
@@ -27,6 +37,7 @@
     color: #2708A0;
     font-size: 2rem;
     font-weight: 600;
+    text-transform: uppercase;
 }
 .navbar .logo a span{
     color: #4316F3;
@@ -114,7 +125,8 @@
 /*About Me section*/
 .aboutMe{
     display: flex;
-    background: url("/Users/work/Portfolio/Portfolio/resources/Images/images/AboutMe.jpg") no-repeat;
+    overflow: scroll;
+    background: transparent url("/Users/work/Portfolio/Portfolio/resources/Images/images/AboutMe.jpg") no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position-x: 300px;
@@ -124,7 +136,15 @@
     font-family: 'Poppins', sans-serif;
 }
 .aboutMe .max-width{
-    margin: auto 0 auto 2.5rem;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.aboutMe-content{
+    position: relative;
+    overflow: hidden;
 }
 .aboutMe .aboutMe-content .text-1{
     font-size: 2.5rem;
@@ -145,3 +165,93 @@
 .icons{
     font-size: 2.5rem;
 }
+.fa-brands{
+    color: #2708A0;
+}
+.fa-brands:hover{
+    color: #4316F3;
+    font-size: 110%;
+    transition: all 0.4s ease;
+}
+/* Mobile width */
+@media screen and (max-width:800px){
+    .aboutMe{
+        background: none;
+    }
+}
+/* Projects section */
+.projects{
+    position: relative;
+    overflow: scroll;
+    height: 100vh;
+    min-height: 500px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.project--list{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+    gap: 1rem;
+}
+.project--item > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media screen and (max-width:800px){
+    .project--list{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+/* Skills section */
+.skills{
+    position: relative;
+}
+.skills--list{
+    display: flex;
+    justify-content: space-around;
+    font-size: 4rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+/* Contact section */
+.contacts{
+    position: relative;
+    color: #2708A0;
+    font-family: 'Poppins', sans-serif;
+}
+.contact--menu{
+    display: flex;
+    padding-bottom: 2rem;
+}
+.contact--info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+.fas{
+    color: #2708A0;
+    font-size: 2rem;
+    margin-right: 0.3rem;
+}
+.contact--info > a{
+    color: #2708A0;
+}
+/* Footer section */
+footer{
+    position: relative;
+    background-color: #2708A0;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.copyright{
+    display: flex;
+    justify-content: end;
+}
+
+
